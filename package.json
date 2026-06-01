@@ -14,7 +14,9 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "format": "prettier --write \"{gatsby-*.js,src/**/*.js}\"",
-    "plop": "plop"
+    "plop": "plop",
+    "deploy": "npm run build && wrangler deploy",
+    "preview": "npm run build && wrangler dev"
   },
   "dependencies": {
     "@netlify/plugin-gatsby": "^3.3.1",
@@ -30,6 +32,7 @@
     "gatsby-plugin-netlify": "^4.4.0",
     "netlify-plugin-cypress": "~2.2.0",
     "plop": "^3.0.5",
-    "prettier": "^2.6.2"
+    "prettier": "^2.6.2",
+    "wrangler": "^4.96.0"
   }
 }
